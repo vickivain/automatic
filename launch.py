@@ -12,7 +12,7 @@ import installer
 debug_install = installer.log.debug if os.environ.get('SD_INSTALL_DEBUG', None) is not None else lambda *args, **kwargs: None
 commandline_args = os.environ.get('COMMANDLINE_ARGS', "")
 sys.argv += shlex.split(commandline_args)
-args = None
+args = --no-warn-script-location
 parser = None
 script_path = None
 extensions_dir = None
